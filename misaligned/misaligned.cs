@@ -12,9 +12,9 @@ namespace MisalignedSpace {
                 for(j = 0; j < 5; j++) {
                     if(number == (i * 5 + j))
                     {
-                        result = String.Format("{0} | {1}", majorColors[i], minorColors[i]);
+                        result = String.Format("{0} | {1}", majorColors[i], minorColors[j]);
                     }
-                    Console.WriteLine("{0} | {1} | {2}", i * 5 + j, majorColors[i], minorColors[i]);
+                    Console.WriteLine("{0} | {1} | {2}", i * 5 + j, majorColors[i], minorColors[j]);
                 }
             }
             return result;
