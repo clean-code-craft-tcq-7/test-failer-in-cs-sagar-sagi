@@ -24,7 +24,7 @@ namespace MisalignedSpace {
             Debug.Assert(result == "White | Slate");
             
             result = printColorMap(22);
-            Debug.Assert(result == "Violet | Blue");
+            Debug.Assert(result == "Violet | Green");
             
             Console.WriteLine("All is well (maybe!)");
         }
