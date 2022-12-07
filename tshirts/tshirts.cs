@@ -4,13 +4,15 @@ using System.Diagnostics;
 namespace TshirtSpace {
     class Tshirt {
         static string Size(int cms) {
-            if(cms < 38) {
-                return "S";
-            } else if(cms > 38 && cms < 42) {
+            if(cms >= 35 && cms <= 38) {
+			return "S";
+            } else if(cms > 38 && cms <= 42) {
                 return "M";
-            } else {
+            } else if(cms > 42 && cms <= 44) {
                 return "L";
-            }
+            } else {
+                return "INVALID";
+		}
         }
         static void Main(string[] args) {
             Debug.Assert(Size(37) == "S");
