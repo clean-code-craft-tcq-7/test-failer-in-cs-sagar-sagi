@@ -23,10 +23,10 @@ namespace MisalignedSpace {
         }
         static void Main(string[] args) {
             string result = printColorMap(4);
-            Debug.Assert(result == "White | Slate");
+            Debug.Assert(result == "White | Brown");
             
             result = printColorMap(22);
-            Debug.Assert(result == "Violet | Green");
+            Debug.Assert(result == "Violet | Orange");
             
             Console.WriteLine("All is well (maybe!)");
         }
